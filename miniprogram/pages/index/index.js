@@ -138,5 +138,20 @@ Page({
       })
       wx.hideLoading()
     })
+  },
+  
+  createPost: function() {
+    wx.navigateTo({
+      url: '/pages/createPost/index',
+    })
+  },
+  
+  onLoad: function() {
+    wx.cloud.callFunction({
+      name: 'getPosts',
+      success: res => {
+        this.setData({posts: res.result.data})
+      }
+    })
   }
 })

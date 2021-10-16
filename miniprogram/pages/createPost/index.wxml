@@ -1,0 +1,6 @@
+<!--pages/createPost/index.wxml-->
+<form bindsubmit="submitPost">
+    <input name="title" placeholder="Title"></input>
+    <input name="body" placeholder="Body"></input>
+    <button form-type="submit">Create</button>
+</form>

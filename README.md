@@ -1,12 +1,32 @@
-# 云开发 quickstart
+# WeChat Mini Program Basic CRUD
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+- Install: https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html
+- Update: Top bar > Weixin Devtools > Check For Updates
+- Signup: https://mp.weixin.qq.com/wxopen/waregister?action=step1
+- Tutorial 0: https://www.youtube.com/watch?v=cOm9XKga7l0
+- Documentation: https://developers.weixin.qq.com/miniprogram/en/dev/framework/
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+## Find your App ID
 
-## 参考文档
+![](/Illustrations/app_id.PNG)
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+## Create new project
 
+![](/Illustrations/create_project.PNG)
+
+## Project structure
+
+- `pages/index/index.wxml` is the home page.
+- `app.json` is like the manifest file.
+
+## Navigation between pages
+
+`wx.navigateTo({ url: '/pages/folder/file', })`
+
+## Database
+
+![](/Illustrations/db.PNG)
+
+## Upload functions to cloud
+
+![](/Illustrations/upload_cloud_functions.PNG)
